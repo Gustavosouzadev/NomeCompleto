@@ -11,10 +11,6 @@ namespace NomeCompleto
 
             string nome;
             string sobrenome;
-            string nomeCompletoo;
-            string sobrenocompleto;
-            string Nomedecatalogo;
-            string nomedecatalogo2;
 
             Console.ForegroundColor = ConsoleColor.DarkYellow;
             Console.Write("Digite seu primeiro nome: ");
@@ -29,29 +25,22 @@ namespace NomeCompleto
             sobrenome = Console.ReadLine();
             
             Console.ForegroundColor = ConsoleColor.White;
-            nomeCompletoo = nome;
-            sobrenocompleto = sobrenome;
-
             Console.WriteLine();
 
             Console.ForegroundColor = ConsoleColor.DarkYellow;
             Console.Write("Nome completo: ");
 
             Console.ForegroundColor = ConsoleColor.White;
-            Console.WriteLine($"{nomeCompletoo} {sobrenocompleto}");
-
-            Nomedecatalogo = sobrenome;
-            nomedecatalogo2 = nome;
+            Console.WriteLine($"{nome} {sobrenome}");
 
             Console.ForegroundColor = ConsoleColor.DarkYellow;
             Console.Write("Nome de catálogo: ");
 
             Console.ForegroundColor = ConsoleColor.White;
-            Console.WriteLine($"{Nomedecatalogo.ToUpper()}, {nomedecatalogo2}");
+            Console.WriteLine($"{sobrenome.ToUpper()}, {nome}");
             
             Console.ResetColor();
             Console.Beep();
-
         }
     }
 }
